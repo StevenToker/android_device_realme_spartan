@@ -38,9 +38,15 @@ void OverrideProperty(const char* name, const char* value) {
  * after the original property has been set.
  */
 void vendor_load_properties() {
+<<<<<<< HEAD
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
 
     if (prjname != 21623 && prjname != 21732) {
+=======
+    auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+
+    if (rf_version != 1){
+>>>>>>> 73c7007 (sm8250-common: Disable NFC for indian devices)
         OverrideProperty("ro.boot.product.hardware.sku", "nfc");
     }
 }
