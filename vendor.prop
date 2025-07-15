@@ -128,6 +128,8 @@ power.saving.mode=1
 
 # Camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
+vendor.camera.algo.jpeghwencode=0
+vendor.camera.aux.packagelist=android,com.oneplus.camera
 
 # Chipset
 ro.soc.manufacturer=QTI
