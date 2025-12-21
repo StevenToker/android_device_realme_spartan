@@ -19,11 +19,7 @@ service secureelement-hal_1_2 /odm/bin/hw/vendor.qti.secure_element@1.2-service
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
-<<<<<<< HEAD
     class early_hal
-=======
-    class hal
->>>>>>> 73c7007 (sm8250-common: Disable NFC for indian devices)
     user nfc
     group nfc
     disabled
