@@ -16,7 +16,7 @@ $(call inherit-product, device/realme/spartan/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Axion stuff
-AXION_MAINTAINER := Ajith037
+AXION_MAINTAINER := Steve
 AXION_PROCESSOR := Snapdragon_870
 TORCH_STR_SUPPORTED := true
 
