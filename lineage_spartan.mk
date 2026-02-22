@@ -15,23 +15,6 @@ $(call inherit-product, device/realme/spartan/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Axion stuff
-AXION_MAINTAINER := Steve
-AXION_PROCESSOR := Snapdragon_870
-TORCH_STR_SUPPORTED := true
-
-# Blur
-TARGET_ENABLE_BLUR := true
-
-# Camera
-AXION_CAMERA_REAR_INFO := 64,8,2
-AXION_CAMERA_FRONT_INFO := 16
-
-# Lineage prebuilts
-ifneq ($(WITH_GMS),false)
-TARGET_INCLUDES_LOS_PREBUILTS := true
-endif
-
 PRODUCT_NAME := lineage_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
